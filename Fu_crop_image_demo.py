@@ -87,7 +87,7 @@ def crop():
         path = "ROIs.txt"
     with open(path,"w+") as f:    
         for key, value in ROIs.items():
-            f.write('%s:%s\n' % (key, value))
+            f.write('%s: %s\n' % (key, value))
 
     cv2.destroyAllWindows()
 
